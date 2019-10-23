@@ -81,12 +81,14 @@
     height: auto;
   }
 
+  /*
   img.sticky{
     position: -webkit-sticky;
     position: sticky;
     top: 1000px;
     width :10%
   }
+  */
 
   /* Middle column */
   .column.middle {
