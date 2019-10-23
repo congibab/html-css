@@ -4,11 +4,12 @@
   
   body {
     margin: 0;
-  
-    /*background-color: antiquewhite;*/
+    height: 100%;
     /*
-    background-image: url("toon-shader-demo.png");
+    background-image: url("Image/background-blur-blurred.jpg");
+    background-color: #a6fff6;
     */
+    
   }
   
   /* Style the header */
@@ -56,7 +57,9 @@
   /* Left and right column */
   .column.side {
     width: 20%;
-    background-color: tomato;;
+    height: 100%;
+    text-align: center;
+    background-color: tomato;
   }
 
   .column a {
@@ -78,6 +81,13 @@
     height: auto;
   }
 
+  img.sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1000px;
+    width :10%
+  }
+
   /* Middle column */
   .column.middle {
     width: 80%;
@@ -86,7 +96,6 @@
   .ContantImg{
     float: right;
     widows: 35%;
-    height: auto;
   }
   /* Clear floats after the columns */
   .row:after {
