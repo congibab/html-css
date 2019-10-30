@@ -18,7 +18,6 @@
 <div class="topnav">
   <a href="../Home.html">自己紹介</a>
   <a href="UE4.html">Unreal Engine4</a>
-  <a href="#">Unity</a>
   <div class= "topnav Time" id = "Time"></div>
 </div>
 
@@ -26,82 +25,115 @@
   <div class="column side">
       <a href ="UE4.HTML">Home</a>
       <a href ="UnityChan.html">UnityChan</a>
-      <a href ="#">海を作った</a>
+      <a href ="CustomShader.html">CustomShader</a>
+      <a href ="GutHub(Ue4).html">Github Upload</a>
       <!--<img class="image"  src="../Image/imageLicenseLogo.png" alt="error">
       -->
   </div>
   
-  <div class="column middle">
-    <h1>Unirtchanを動かす。(C++)</h1>
-    
-     
-      <ol>
-        <!--1番-->
-        <h2><li>ProjectEditerを編集</li></h2>
-        <img src="../Image/imageLicenseLogo.png" alt="error">
-        <p>jlkasjdlkasdjlkasdjklasdjklasdjlaksdjaslkdjaskldj</p>
+<!------------------------------------------------------------------------------------------------->
 
+  <div class="column middle">
+    <h1>1,Unirtchanを動かす。(C++)</h1>
+        <!--1番-->
+        <div style = "display: flex; ">
+             <div style="margin-left: 10px;margin-top: 10px; width: 30%; height: 100%">
+                 <img src="../Image/UE4Input.jpg" style="float:left;width:100%;height:auto;">
+             </div>
+             
+             <div style="margin-left: 50px;margin-top: 10px; width: 50%">
+              <ul>
+                    <li>Action Mappingに 名前=Jump、 キーボード=SpaceBar</li>
+                    <li>Axis Mappingsに 名前=MoveForward, Scale=1,キーボード=W</li>
+                    <li>Axis Mappingsに 名前=MoveForward, Scale=-1,キーボード=W</li>
+                    <li>Axis Mappingsに 名前=MoveRight, Scale=1,キーボード=D</li>
+                    <li>Axis Mappingsに 名前=MoveRight, Scale=-1,キーボード=A</li>
+               </ul>
+            
+             </div>
+        </div>
+
+         <h2>Player Character.h Classを作る。</h2>
+             <div style="display: flex;">
+                 <div style="margin-left: 10px;margin-top: 10px; width: 30%; height: 100%">
+                   <img src="../Image/Class.jpg" class="image">
+                 </div>
+             
+                 <div style="margin-left: 50px;margin-top: 10px; width: 70%;">
+                 <a href ="https://github.com/congibab/UnrealEngine/blob/master/testClass/Source/testClass/MyCharacter.h" style="color: black; background:aquamarine;">MyCharacter.h</a>
+                  <a href = "https://github.com/congibab/UnrealEngine/blob/master/testClass/Source/testClass/MyCharacter.cpp" style="color: black; background:aquamarine;">MyCharacter.cpp</a>
+
+             </div>
+        </div>
+        
+        
+        <h2>Player CHaracter ClassをベースでBluePrint生成</h2>
+        <div style="display: flex;">
+            <div style="margin-left: 10px;margin-top: 10px; width: 30%; height: 100%">
+              <img src="../Image/Mesh.jpg" class="image">
+            </div>
+            
+            <div style="margin-left: 50px;margin-top: 10px; width: 70%">
+               <p>Player Characterと名前でBluePrint生成
+               </p>
+            </div>
+       </div>
+
+       <h2>Meshを設定</h2>
+         <div style="display: flex;">
+             <div style="margin-left: 10px;margin-top: 10px; width: 30%; height: 100%">
+               <img src="../Image/Mesh.jpg" class="image">
+               <img src="../Image/CharRotation.jpg" class="image">
+             </div>
+             
+             <div style="margin-left: 50px;margin-top: 10px;">
+                <p>MeshをUniryCharnを選択<br>orient Rotation to movementにチャックして移動方向によってCharacterを回転する。</p>
+             </div>
+        </div>
+        
+        
+       <h2>移動Motionを切り替えろ(1)</h2>
+         <div style="display: flex;">
+             <div style="margin-left: 10px;margin-top: 10px; width: 30%; height: 100%">
+               <img src="../Image/MotionBp.jpg" class="image">
+
+             </div>
+             
+             <div style="margin-left: 50px;margin-top: 10px;">
+                <p>AnimationBpを設定して<br>MycharacterClassの変数を貰う</p>
+             </div>
+        </div>
+
+       <h2>移動Motionを切り替えろ(2)</h2>
+         <div style="display: flex;">
+             <div style="margin-left: 10px;margin-top: 10px; width: 30%; height: 100%">
+               <img src="../Image/AnimationBp(motion).jpg" class="image">
+
+             </div>
+             
+             <div style="margin-left: 50px;margin-top: 10px;">
+                <p>isJump = true時JumpMotionを実行する<br>isRun = true時MoveMotionを実行する。</p>
+             </div>
+        </div>
+
+        <h2>完成</h2>
+         <div style="display: flex;">
+             <div style="margin-left: 10px;margin-top: 10px; width: 30%; height: 100%">
+               <img src="../Image/AnimationBp(motion).jpg" class="image">
+             </div>
+             
+             <div style="margin-left: 50px;margin-top: 10px;">
+                <p>AnimationBpを設定する。<br></p>
+             </div>
+        </div>
+       
+        
         <!--2番-->
-        <h2><li>Character.h Classを作る。</li></h2>
-        <img src="../Image/imageLicenseLogo.png" alt="error">
-        <p>下のSourceCodeを追加</p>
-        
-        <ul>
-            <li>Sorce Code.h
-              <pre>
-                <code>
-                  sample
-                  sample
-                  sample
-                  sample
-                  sample
-                  
-                </code>
-              </pre>
-            <a href "#" style="color: black; background:aquamarine;">Code.h</a>
-            <li>Sorce Code.Cpp
-              <pre>
-                <code>
-                    source code sample
-                    source code sample
-                    source code sample
-                    source code sample
-                    source code sample
-                    source code sample
-                 </code>
-               </pre>
-              <a href "#" style="color: black; background:aquamarine;">Code.h</a>
-             </li>
-         </ul>
+       
          
-        <!--3番-->
-         <h2><li>UniryChanをインポート</li></h2>
-        <img src="../Image/imageLicenseLogo.png" alt="error">
-        <p>インポート</p>
-        
-        <!--4番-->
-        <h2><li>AnimationのMotion分割</li></h2>
-        <img src="../Image/imageLicenseLogo.png" alt="error">
-        <p>インポート</p>
-      
-         <!--5番-->
-         <h2><li>BluePrint作成</li></h2>
-         <img src="../Image/imageLicenseLogo.png" alt="error">
-         <p>BluePrint生成</p>
- 
-         <!--6番-->
-         <h2><li>animation Class BluePrint作成</li></h2>
-         <img src="../Image/imageLicenseLogo.png" alt="error">
-         <p>BluePrint生成</p>
-        
-         <!--7番-->
-         <h2><li>animation制御用Script作成</li></h2>
-         <img src="../Image/imageLicenseLogo.png" alt="error">
-         <p>BluePrint生成</p>
-       </ol>
     </div>
     <!--BottomRight unitychan logo-->
-    <div style="position: fixed; right: 0px; bottom: 0px; width: 10%;"> 
+    <div style="position: fixed; right: 0px; bottom: 0px; width: 10%;">
          <img class="image"  src="../Image/imageLicenseLogo.png" alt="error">
     </div>
     <!--

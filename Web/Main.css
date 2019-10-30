@@ -7,8 +7,9 @@
     height: 100%;
     /*
     background-image: url("Image/background-blur-blurred.jpg");
-    background-color: #a6fff6;
     */
+    background-color: blueviolet;
+    
     
   }
   
@@ -78,7 +79,9 @@
 
   .image {
     max-width: 100%;
+    float : left;
     height: auto;
+    alt : "error";
   }
 
   /*
@@ -95,11 +98,15 @@
     width: 80%;
     padding-right: 2.5%;
  } 
+
+
   .ContantImg{
     float: right;
     widows: 35%;
   }
   /* Clear floats after the columns */
+
+ 
   .row:after {
     content: "";
     display: table;
