@@ -36,12 +36,12 @@
   <div class="column middle">
     <h1>1,Unirtchanを動かす。(C++)</h1>
         <!--1番-->
-        <div style = "display: flex; ">
-             <div style="margin-left: 10px;margin-top: 10px; width: 30%; height: 100%">
-                 <img src="../Image/UE4Input.jpg" style="float:left;width:100%;height:auto;">
+        <div class = "ContantRow">
+             <div class="ContantRow Image">
+                 <img src="../Image/UE4Input.jpg">
              </div>
              
-             <div style="margin-left: 50px;margin-top: 10px; width: 50%">
+             <div class="ContantRow Text">
               <ul>
                     <li>Action Mappingに 名前=Jump、 キーボード=SpaceBar</li>
                     <li>Axis Mappingsに 名前=MoveForward, Scale=1,キーボード=W</li>
@@ -54,75 +54,75 @@
         </div>
 
          <h2>Player Character.h Classを作る。</h2>
-             <div style="display: flex;">
-                 <div style="margin-left: 10px;margin-top: 10px; width: 30%; height: 100%">
-                   <img src="../Image/Class.jpg" class="image">
+             <div class="ContantRow">
+                <div class="ContantRow Image">
+                    <img src="../Image/Class.jpg">
                  </div>
              
-                 <div style="margin-left: 50px;margin-top: 10px; width: 70%;">
-                 <a href ="https://github.com/congibab/UnrealEngine/blob/master/testClass/Source/testClass/MyCharacter.h" style="color: black; background:aquamarine;">MyCharacter.h</a>
-                  <a href = "https://github.com/congibab/UnrealEngine/blob/master/testClass/Source/testClass/MyCharacter.cpp" style="color: black; background:aquamarine;">MyCharacter.cpp</a>
+                 <div class = "ContantRowText">
+                 <a href ="https://github.com/congibab/UnrealEngine/blob/master/testClass/Source/testClass/MyCharacter.h">MyCharacter.h</a>
+                 <a href = "https://github.com/congibab/UnrealEngine/blob/master/testClass/Source/testClass/MyCharacter.cpp">MyCharacter.cpp</a>
 
              </div>
         </div>
         
         
         <h2>Player CHaracter ClassをベースでBluePrint生成</h2>
-        <div style="display: flex;">
-            <div style="margin-left: 10px;margin-top: 10px; width: 30%; height: 100%">
-              <img src="../Image/Mesh.jpg" class="image">
+        <div class="ContantRow">
+            <div class="ContantRow Image">
+                <img src="../Image/Mesh.jpg" class="image">
             </div>
             
-            <div style="margin-left: 50px;margin-top: 10px; width: 70%">
+            <div class="ContantRowText">
                <p>Player Characterと名前でBluePrint生成
                </p>
             </div>
        </div>
 
        <h2>Meshを設定</h2>
-         <div style="display: flex;">
-             <div style="margin-left: 10px;margin-top: 10px; width: 30%; height: 100%">
-               <img src="../Image/Mesh.jpg" class="image">
+       <div class="ContantRow">
+          <div class="ContantRow Image">
+                <img src="../Image/Mesh.jpg" class="image">
                <img src="../Image/CharRotation.jpg" class="image">
              </div>
              
-             <div style="margin-left: 50px;margin-top: 10px;">
+             <div class="ContantRowText">
                 <p>MeshをUniryCharnを選択<br>orient Rotation to movementにチャックして移動方向によってCharacterを回転する。</p>
              </div>
         </div>
         
         
        <h2>移動Motionを切り替えろ(1)</h2>
-         <div style="display: flex;">
-             <div style="margin-left: 10px;margin-top: 10px; width: 30%; height: 100%">
-               <img src="../Image/MotionBp.jpg" class="image">
+         <div class="ContantRow">
+            <div class="ContantRow Image">
+                <img src="../Image/MotionBp.jpg">
 
              </div>
              
-             <div style="margin-left: 50px;margin-top: 10px;">
+             <div class="ContantRowText">
                 <p>AnimationBpを設定して<br>MycharacterClassの変数を貰う</p>
              </div>
         </div>
 
        <h2>移動Motionを切り替えろ(2)</h2>
-         <div style="display: flex;">
-             <div style="margin-left: 10px;margin-top: 10px; width: 30%; height: 100%">
-               <img src="../Image/AnimationBp(motion).jpg" class="image">
+         <div class = "ContantRow ">
+            <div class="ContantRow Image">
+                <img src="../Image/AnimationBp(motion).jpg">
 
              </div>
              
-             <div style="margin-left: 50px;margin-top: 10px;">
+             <div class="ContantRowText">
                 <p>isJump = true時JumpMotionを実行する<br>isRun = true時MoveMotionを実行する。</p>
              </div>
         </div>
 
         <h2>完成</h2>
-         <div style="display: flex;">
-             <div style="margin-left: 10px;margin-top: 10px; width: 30%; height: 100%">
-               <img src="../Image/AnimationBp(motion).jpg" class="image">
+         <div class = "ContantRow ">
+            <div class="ContantRow Image">
+                <img src="../Image/AnimationBp(motion).jpg">
              </div>
              
-             <div style="margin-left: 50px;margin-top: 10px;">
+             <div class="ContantRowText">
                 <p>AnimationBpを設定する。<br></p>
              </div>
         </div>
@@ -133,8 +133,8 @@
          
     </div>
     <!--BottomRight unitychan logo-->
-    <div style="position: fixed; right: 0px; bottom: 0px; width: 10%;">
-         <img class="image"  src="../Image/imageLicenseLogo.png" alt="error">
+    <div style="position: fixed; right: 70px; bottom: 0px; width: 10%;">
+         <img class="UnitychanLogo"  src="../Image/imageLicenseLogo.png" alt="error">
     </div>
     <!--
   <div class="column side">

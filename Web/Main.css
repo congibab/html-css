@@ -8,11 +8,13 @@
     /*
     background-image: url("Image/background-blur-blurred.jpg");
     */
-    background-color: blueviolet;
+    background-color: pink;
     
     
   }
+
   
+/*---------------------------------------------------------------*/  
   /* Style the header */
   .header {
     background-color: whitesmoke;
@@ -48,7 +50,8 @@
     text-align: right;
     color : aquamarine;
   }
-  
+
+  /*---------------------------------------------------------------*/
   /* Create three unequal columns that floats next to each other */
   .column {
     float: left;
@@ -58,7 +61,6 @@
   /* Left and right column */
   .column.side {
     width: 20%;
-    height: 100%;
     text-align: center;
     background-color: tomato;
   }
@@ -77,13 +79,6 @@
     color: black;
   }
 
-  .image {
-    max-width: 100%;
-    float : left;
-    height: auto;
-    alt : "error";
-  }
-
   /*
   img.sticky{
     position: -webkit-sticky;
@@ -93,29 +88,68 @@
   }
   */
 
+
+  /*---------------------------------------------------------------*/
   /* Middle column */
   .column.middle {
     width: 80%;
     padding-right: 2.5%;
- } 
-
-
-  .ContantImg{
+ }
+ 
+ .column.middle img{
     float: right;
     widows: 35%;
-  }
+    width: 35%;
+    height: auto;
+    
+ }
+
   /* Clear floats after the columns */
 
- 
+  
+/*---------------------------------------------------------------*/
+  .ContantRow{
+    display: flex;
+  }
+  .ContantRow.Image{
+   width: 30%;
+   height: 100%;
+ }
+
+ .ContantRow.Image img{
+   width: 100%; 
+   float:left;
+   width: 100%;
+   height: auto;
+ }
+
+.ContantRowText{
+  margin-left: 50px;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.ContantRow a{
+  width: 100%;
+  color: black; 
+  background:aquamarine
+}
+
   .row:after {
     content: "";
     display: table;
     clear: both;
   }
-  
+  /*---------------------------------------------------------------*/
   /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
     .column.side, .column.middle {
       width: 100%;
     }
-  }
+
+.UnitychanLogo{
+    width: 100%;
+    float : right;
+    height: auto;
+  }  
+}
