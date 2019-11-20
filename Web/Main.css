@@ -8,9 +8,10 @@
     /*
     background-image: url("Image/background-blur-blurred.jpg");
     */
+
+    cursor: pointer;
     background-color: pink;
-    
-    
+    cursor: url(Image/cursor.png), pointer;
   }
 
   
@@ -114,6 +115,7 @@
   .ContantRow.Image{
    width: 30%;
    height: 100%;
+   margin: 10px;
  }
 
  .ContantRow.Image img{

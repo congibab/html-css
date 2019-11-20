@@ -33,44 +33,54 @@
       -->
   </div>
   
-  <!---------------------------------------------------------------------------------------------------------------------------------------->
+  <!---->
   <div class="column middle">
     <h1>CustomShaderを使う。</h1>
         <!--1番-->
         <h2>HLSLを使う</h2>
         <div style = "display: flex;">
              <div class = "ContantRow Image">
-                 <img src="../Image/UE4Input.jpg">
+                 <img src="../Image/shader.jpg">
              </div>
              
              <div class="ContantRowText">
-            <p>HLSL SourceCode</p>
+            <p> CustomCodeへShaderCodeを貼り付ける(GLSLならHLSL形式で変更)</p>
+            <p> CMOT OutPutTime = float3</p>
+            <p> OutPutTime = float3</p>
+            <p> InputNameはsrcCodeのInputNameと同じに設定</p>
+
+            <h3>SourceCode(GLSL SandBox)</h3>
              <a href ="https://github.com/congibab/UnrealEngine/blob/master/testClass/Source/testClass" style="color: black; background:aquamarine;">CustomShader</a>
              </div>
         </div>
 
-         <h2>Mecherial BluePrint作成</h2>
-             <div class="ContantRow">
-                 <div class = "ContantRow Image">
-                   <img src="../Image/Class.jpg" class="image">
-                 </div>
-             
-                 <div class="ContantRowText">
-                  <p>Mecherial Source</p>
-                 <a href ="https://github.com/congibab/UnrealEngine/blob/master/testClass/Content/Custerm.uasset" style="color: black; background:aquamarine;">Mecherial</a>
+        <h2>BluePrint Shader</h2>
 
-             </div>
-        </div>
-        
+        <div class="ContantRow">
+          <div class = "ContantRow Image">
+            <img src="../Image/bpShader.jpg" class="image">
+          </div>
+      
+          <div class="ContantRowText">
+           <p>Custom Node生成</p>
+           <p>texturecoordinate 生成</p>
+           <p>Time 生成</p>
+           <p>Time は Custom NodeのTime,  texturecoordinateは Custom NodeのtexcoordへNode連携</p>
+
+
+          </div>
+         </div>        
         
         <h2>完成</h2>
         <div class="ContantRow">
             <div class = "ContantRow Image">
-              <img src="../Image/UE4logo.png">
+              <img src="../Image/nonShader.jpg">
             </div>
+          
+         
             
-            <div class="ContantRowText">
-               <p>Mecherial 完成</p>
+            <div class = "ContantRow Image">
+              <img src="../Image/afterShader.jpg">
             </div>
        </div>
         
