@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>作業記録所</title>
+<meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css" href="../main.css">
+<script type="text/javascript" src="../main.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div class="header">
+  <h1>作業工防</h1>
+  <p>色んなものを興味を持って道周りして勉強の記録所</p>
+</div>
+   
+<div class="topnav">
+  <a href="../Home.html">自己紹介</a>
+  <a href="UE4.html">Unreal Engine4</a>
+  <a href="../Glsl/glsl.html">glsl</a>
+  <div class= "topnav Time" id = "Time"></div>
+</div>
+
+<div class="row">
+  <div class="column side">
+      <a href ="UE4.HTML">Home</a>
+      <a href ="UnityChan.html">UnityChan</a>
+      <a href ="CustomShader.html">CustomShader</a>
+      <a href ="GutHub(Ue4).html">Github Upload</a>
+      <a href ="GutHub(Ue4).html">UnityとUE4の違う
+      </a>
+  </div>
+  
+  <div class="column middle">
+    
+  
+        <!--
+        <div class="ContantRow Image">
+            <img src="../Image/CharRotation.jpg" class="image">
+        </div>
+        
+        <div class="ContantRowText">
+            <p>MeshをUniryCharnを選択<br>orient Rotation to movementにチャックして移動方向によってCharacterを回転する。</p>
+        </div>
+        -->
+
+    <h2>用語</h2>
+        <table style="width:100%">
+             <tr>
+                <th>Unity</th>
+                <th>Unreal Engine4</th>
+            </tr>
+            <tr>
+                <td>Object</td>
+                <td>Actor</td>
+            </tr>
+            <tr>
+                <td>Vector</td>
+                <td>FVector</td>
+            </tr>
+            <tr>
+                <td>Array</td>
+                <td>TArray</td>
+            </tr>
+            <tr>
+                <td>position</td>
+                <td>Actorlotation</td>
+            </tr>
+        </table>
+    <h2>プログラミング</h2>
+        <table style="width:100%">
+             <tr>
+                <th>/</th>
+                <th>Unity</th>
+                <th>Unreal Engine4</th>
+            </tr>
+
+            <tr>
+                <td>言語</td>
+                <td>C#</td>
+                <td>C++</td>
+            </tr>
+
+            <tr>
+                <td>Object取得</td>
+                <td>GameObject.find();</td>
+                <td>GetAllActorsOfClass();</td>
+            </tr>
+
+            <tr>
+                <td>Component取得</td>
+                <td>GetComponent<>();</td>
+                <td>GetComponentByClass()</td>
+            </tr>
+
+            <tr>
+                <td>座標取得</td>
+                <td>transform.position</td>
+                <td>GetActorLocation()</td>
+            </tr>
+
+            <tr>
+                <td>座標変更</td>
+                <td>transform.position = Vector3(0,0,0)</td>
+                <td>SetActorLocation(FVector3(0,0,0))</td>
+            </tr>
+        </table>
+
+        <h2>beginOverlap</h2> 
+        <table>
+            <tr>
+                <th>Unity</th>
+         
+            </tr>
+
+            <tr>
+                <td>
+                    <code>
+                      Collider.OnCOllisionEnter(col)
+                    </code>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>Unreal Engine4</th>
+            </tr>
+
+            <tr>
+                <td>
+                    <code>
+                        OnComponentBeginOverlap.AddDynamic(this, &AJumpPad::OnOverlapBegin);
+                      ----------------------------------------------------------------<br>
+                        void OnOverlapBegin(UPrimitiveComponent* OverlappedComponent,AActor* OtherActor,<br>
+                        ....................UPrimitiveComponent* OtherComp, int32 OtherBodyIndex,<br> 
+                        ....................bool bFromSweep, const FHitResult &SweepResult); 
+                        
+                      </code> 
+                </td>  
+            </tr>
+        </table>
+
+        <h2>DebugLog関連</h2>
+        <table>
+            <tr>
+              <th>Unity</th>
+            </tr>
+
+            <tr>
+              <td>Debug.Log(変数名);</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+              <th>Unreal Engine4</th>
+            </tr>
+
+            <tr>
+              <td>
+                <code>
+                  GEngine -> AddOnScreenDebugMessage(-1, 5.0f, FColor::Blue, Fstring::Printf(TEXT("%s"),<br>
+                 ---------------------------------- FVector(0,0,0).ToString()));
+                </code>
+              </td>
+            </tr>
+        </table>
+   
+    
+  </div>
+  <!--
+  <div class="column side">
+    <h2>Side</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+  </div>
+  -->
+</div>
+  
+</body>
+</html>
