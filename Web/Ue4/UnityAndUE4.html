@@ -29,8 +29,7 @@
       <a href ="UnityChan.html">UnityChan</a>
       <a href ="CustomShader.html">CustomShader</a>
       <a href ="GutHub(Ue4).html">Github Upload</a>
-      <a href ="GutHub(Ue4).html">UnityとUE4の違う
-      </a>
+      <a href ="UnityAndUE4.html">UnityとUE4の違い</a>
   </div>
   
   <div class="column middle">
@@ -131,11 +130,10 @@
             <tr>
                 <td>
                     <code>
-                        OnComponentBeginOverlap.AddDynamic(this, &AJumpPad::OnOverlapBegin);
-                      ----------------------------------------------------------------<br>
-                        void OnOverlapBegin(UPrimitiveComponent* OverlappedComponent,AActor* OtherActor,<br>
-                        ....................UPrimitiveComponent* OtherComp, int32 OtherBodyIndex,<br> 
-                        ....................bool bFromSweep, const FHitResult &SweepResult); 
+                        OnComponentBeginOverlap.AddDynamic(this, &AJumpPad::OnOverlapBegin);<br>
+                        ....................void OnOverlapBegin(UPrimitiveComponent* OverlappedComponent,AActor* OtherActor,<br>
+                        ........................................UPrimitiveComponent* OtherComp, int32 OtherBodyIndex,<br> 
+                        ........................................bool bFromSweep, const FHitResult &SweepResult); 
                         
                       </code> 
                 </td>  
@@ -155,19 +153,40 @@
 
         <table>
             <tr>
-              <th>Unreal Engine4</th>
+              <th>Unreal Engine4(FVector3用)</th>
             </tr>
 
             <tr>
               <td>
                 <code>
                   GEngine -> AddOnScreenDebugMessage(-1, 5.0f, FColor::Blue, Fstring::Printf(TEXT("%s"),<br>
-                 ---------------------------------- FVector(0,0,0).ToString()));
+                  ................................... FVector(0,0,0).ToString()));
                 </code>
               </td>
             </tr>
         </table>
-   
+        
+        <h2>エディター内で編集</h2>
+        <table>
+            <tr>
+                <th colspan = "2">Unity</th>
+            </tr>
+
+            <tr>
+                <td>public データ形　変数名;</td>
+                <td>[serial field] <br> private データ形　変数名;</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th colspan = "2">Unreal Engine4</th>
+            </tr>
+
+            <tr>
+                <td>UPROPERTY(EditAnywhere)<br>データ形　変数名;</td>
+            </tr>
+        </table>
     
   </div>
   <!--
