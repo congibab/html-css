@@ -38,9 +38,24 @@
     <h2>VS CodeにShaderToyをインストール</h2>
         <!--1番-->
         <div class = "ContantRow">
-            　<div class = "ContantRowText">
-                <a href ="https://marketplace.visualstudio.com/items?itemName=stevensona.shader-toy">ShaderToy</a>
-             </div>
+           <script id = "vs" type= "x-shader/x-vertex">
+
+            attribute vec3 position;                
+            void main()
+            {
+              gl_position = vec4(position, 1.0);
+            }
+            </script>
+
+            <script id = "shader-fs" type = "x-shader/x-frragment">
+            precision mediump float;
+            uniform float u_time;
+
+            void main()
+            {
+                gl_FragColor = vec4(1 ,1 ,0.0, 1.0);
+            }
+            </script>
         </div>
 
         <h2>Hello GLSL</h2>  

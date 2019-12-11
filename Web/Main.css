@@ -9,9 +9,7 @@
     background-image: url("Image/background-blur-blurred.jpg");
     */
 
-    cursor: pointer;
     background-color: pink;
-    cursor: url(Image/cursor.png), pointer;
   }
 
   table, th, td {
